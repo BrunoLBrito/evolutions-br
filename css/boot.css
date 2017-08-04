@@ -1,0 +1,135 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.fontzero {
+  font-size: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  float: left;
+}
+
+.content {
+  width: 92%;
+  float: left;
+  margin: 0 4%;
+  padding: 20px 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  height: 1550px;
+}
+
+.header {
+  background-color: #0C3D63;
+  height: 80px;
+  position: fixed;
+  z-index: 99;
+  color: #fff;
+  box-shadow: 0px 0px 0px #000;
+}
+
+.header h1 {
+  float: left;
+}
+
+.header .btn-mobile {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.header .btn-mobile:hover {
+  background-color: #fff;
+}
+
+.header .btn-mobile span {
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  left: 5px;
+  position: absolute;
+}
+
+.header .btn-mobile span:nth-child(1) {
+  top: 9px;
+}
+
+.header .btn-mobile span:nth-child(2) {
+  top: 18px;
+}
+
+.header .btn-mobile span:nth-child(3) {
+  top: 27px;
+}
+
+.header .nav {
+  background-color: #333;
+  width: 80%;
+  height: 100%;
+  max-width: 300px;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  transition: left .5s;
+}
+
+.header .nav ul {
+  margin-top: 80px;
+}
+
+.header .nav ul a {
+  color: #fff;
+  background-color: #444;
+  display: block;
+  margin-top: 2px;
+  padding: 20px;
+}
+
+.header .nav .profile {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  float: left;
+  color: #000;
+  text-align: center;
+}
+
+.header .nav .profile img {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.header .nav .profile p {
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.header .nav .profile .cargo {
+  color: #fff;
+  background-color: #f00;
+  display: block;
+}
