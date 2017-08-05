@@ -9,6 +9,7 @@
   "author": "Bruno Lucas <bruno-lucas@msn.com>",
   "license": "ISC",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
