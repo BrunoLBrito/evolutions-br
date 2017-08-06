@@ -35,7 +35,7 @@ body
 
 // HEADER //
 .header
-    background: -webkit-linear-gradient(right, gray , #000)
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
     height: 80px
     position: fixed
     z-index: 99
@@ -85,7 +85,7 @@ body
             margin-top: 80px
             a
                 color: #fff
-                background: -webkit-linear-gradient(right, gray , #000)
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
                 display: block
                 margin-top: 2px
                 padding: 20px
@@ -94,10 +94,10 @@ body
                     width: 20px
                     height: 20px
                     // background-color: #f00
-                    color: #F00
+                    color: #fff
                     text-align: center
         .profile
-            background: -webkit-linear-gradient(right, gray , #000)
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
             width: 100%
             height: 80px
             float: left
@@ -112,10 +112,17 @@ body
             p
                 margin-top: 15px
                 text-decoration: underline
-            .cargo
-                color: #fff
-                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c82273), color-stop(100%,#e24a35))
-                display: block
+.cargo-adm
+    color: #fff
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c82273), color-stop(100%,#e24a35))
+    display: block
+    text-align: center
+.cargo-mod
+    color: #fff
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
+    display: block
+    text-align: center
+
 
 // MAIN //
 main
@@ -124,7 +131,9 @@ main
 // SECTION REGRAS //
 .section-regras
     background-color: #fff
-    font-family: 'Lato', sans-serif
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 1em
     h2
         color: #000
         text-align: center
@@ -162,5 +171,36 @@ main
                 padding: 5px 0px
                 font-weight: bold
 
+// SECTION EQUIPE //
+.equipe
+    width: 100%
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fff), color-stop(100%,#ddd))
+    font-family: 'Roboto', sans-serif
+    h2
+        text-align: center
+    .flex
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: center
+        .box
+            background-color: #fff
+            width: 200px
+            min-width: 248.212px
+            text-align: center
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+            margin: 10px
+            img
+                width: 100%
+                height: 200px
+            h3
+                font-size: 1em
+                text-transform: uppercase
+                font-weight: 400
+                padding: 10px 0px
+            p
+                font-size: .8em
+                font-weight: 300
+                padding: 5px 0px 10px 0px
 
 
