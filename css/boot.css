@@ -32,11 +32,6 @@ ul {
   padding: 20px 0;
 }
 
-body {
-  background-color: #f1f1f1;
-  height: 1550px;
-}
-
 .header {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
   height: 80px;
@@ -60,6 +55,7 @@ body {
   height: 40px;
   background-color: #fff;
   float: right;
+  border: 1px solid #000;
   position: relative;
   cursor: pointer;
   transition: border-radius .5s;
@@ -73,21 +69,21 @@ body {
   width: 30px;
   height: 4px;
   background-color: #000;
-  left: 5px;
+  left: 4px;
   position: absolute;
   transition: all .5s;
 }
 
 .header .btn-mobile span:nth-child(1) {
-  top: 9px;
+  top: 8px;
 }
 
 .header .btn-mobile span:nth-child(2) {
-  top: 18px;
+  top: 17px;
 }
 
 .header .btn-mobile span:nth-child(3) {
-  top: 27px;
+  top: 26px;
 }
 
 .header .nav {
@@ -161,15 +157,33 @@ main {
 }
 
 .section-regras {
-  background-color: #fff;
+  background: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1em;
+  padding-bottom: 100px;
 }
 
 .section-regras h2 {
-  color: #000;
   text-align: center;
+  position: relative;
+  color: #6666FF;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.section-regras .triangulo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50px;
+  bottom: -100px;
+  border: 50px solid transparent;
+  border-top-color: #fff;
 }
 
 .section-regras .sobre {
@@ -229,12 +243,30 @@ main {
 
 .equipe {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(100%, #ddd));
+  background: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
 .equipe h2 {
   text-align: center;
+  position: relative;
+  color: #6666FF;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.equipe .triangulo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50px;
+  top: -100px;
+  border: 50px solid transparent;
+  border-bottom-color: #fff;
 }
 
 .equipe .flex {
