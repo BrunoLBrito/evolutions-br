@@ -34,6 +34,7 @@ ul {
 
 .header {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+  background-color: #19B4FF;
   height: 80px;
   position: fixed;
   z-index: 99;
@@ -138,9 +139,24 @@ ul {
   text-decoration: underline;
 }
 
+.header .nav .profile a {
+  color: #fff;
+}
+
+.header .nav .profile .btn {
+  padding: 10px;
+  width: 100px;
+  margin: 5px 0px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6e07c1), color-stop(100%, #A02BFF));
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 .cargo-adm {
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c82273), color-stop(100%, #e24a35));
+  background-color: #DE4340;
   display: block;
   text-align: center;
 }
@@ -148,6 +164,7 @@ ul {
 .cargo-mod {
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+  background-color: #19B4FF;
   display: block;
   text-align: center;
 }
@@ -216,6 +233,7 @@ main {
 
 .section-regras .art-equipe .content-regras p span {
   color: #f00;
+  font-weight: bold;
 }
 
 .section-regras .art-equipe .content-regras p:last-child {
@@ -308,6 +326,7 @@ footer.footer {
   background-color: #000;
   text-align: center;
   font-family: 'Lato', sans-serif;
+  font-size: 1em;
 }
 
 footer.footer p {
@@ -317,4 +336,70 @@ footer.footer p {
 footer.footer p span {
   color: #6666FF;
   font-weight: bold;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: arial;
+}
+
+.table {
+  border-bottom: #999 solid 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th, td {
+  border-right: #999 solid 1px;
+  font-size: 12px;
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table td:last-child {
+  border-right: 0;
+}
+
+.table thead th {
+  font-weight: normal;
+  background-color: #005dab;
+  color: #fff;
+  font-size: 15px;
+}
+
+.table tbody > tr:nth-child(odd) > td,
+.table tbody > tr:nth-child(odd) > th {
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 767px) {
+  .table-responsive {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .table-responsive thead, .table-responsive tbody, .table-responsive th, .table-responsive td, .table-responsive tr {
+    display: block;
+  }
+  .table-responsive td, .table-responsive th {
+    height: 35px;
+  }
+  .table-responsive thead {
+    float: left;
+  }
+  .table-responsive tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .table-responsive tbody, .table-responsive tr {
+    display: inline-block;
+  }
 }
