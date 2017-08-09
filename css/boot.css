@@ -338,6 +338,16 @@ footer.footer p span {
   font-weight: bold;
 }
 
+.membros h2 {
+  text-align: center;
+  color: #6666FF;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #fff;
+  padding: 20px 0px;
+}
+
 table {
   max-width: 100%;
   background-color: transparent;
@@ -352,7 +362,7 @@ table {
   margin-bottom: 20px;
 }
 
-.table th, td {
+.table th, .table td {
   border-right: #999 solid 1px;
   font-size: 12px;
   padding: 8px;
@@ -380,7 +390,7 @@ table {
 @media (max-width: 767px) {
   .table-responsive {
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
   }
   .table-responsive thead, .table-responsive tbody, .table-responsive th, .table-responsive td, .table-responsive tr {
@@ -399,7 +409,10 @@ table {
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
   }
-  .table-responsive tbody, .table-responsive tr {
+  .table-responsive tbody tr {
     display: inline-block;
+  }
+  .table-responsive td:last-child {
+    border-right: #999 solid 1px;
   }
 }

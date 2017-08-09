@@ -262,6 +262,17 @@ footer.footer
 // ********************************** //
 // ***** PAINEL ADMINISTRATIVO ****** //
 // ********************************** //
+.membros
+
+    h2
+        text-align: center
+        color: #6666FF
+        font-family: 'Open Sans', sans-serif
+        text-transform: uppercase
+        letter-spacing: 2px
+        background: #fff
+        padding: 20px 0px
+
 table
     max-width: 100%
     background-color: transparent
@@ -274,7 +285,8 @@ table
     width: 100%
     margin-bottom: 20px
 
-.table th, td
+.table
+    th, td
      border-right: #999 solid 1px
      font-size: 12px
      padding: 8px
@@ -299,7 +311,7 @@ table
 @media (max-width: 767px)
     .table-responsive
         display: block
-        position: absolute
+        position: relative
         width: 100%
         thead, tbody, th, td, tr
             display: block
@@ -313,5 +325,7 @@ table
             overflow-x: auto
             -webkit-overflow-scrolling: touch
             white-space: nowrap
-        tbody, tr
-            display: inline-block
+            tr
+                display: inline-block
+        td:last-child
+            border-right: #999 solid 1px
