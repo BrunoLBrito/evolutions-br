@@ -13,6 +13,9 @@ a
 ul
     list-style: none
 
+button
+    cursor: pointer
+
 // BOOT //
 .fontzero
     font-size: 0
@@ -72,7 +75,7 @@ ul
 
     // MENU LATERAL //
     .nav
-        background: #222
+        background-color: #19B4FF
         width: 80%
         max-width: 300px
         position: fixed
@@ -84,6 +87,7 @@ ul
             a
                 color: #fff
                 background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
+                background-color: #19B4FF
                 display: block
                 margin-top: 2px
                 padding: 20px
@@ -118,6 +122,7 @@ ul
                 margin: 5px 0px
                 border: none
                 background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
+                background-color: #9926F6
                 color: #fff
                 border: 1px solid #fff
 .cargo-adm
@@ -136,7 +141,8 @@ ul
 
 // MAIN //
 main
-    margin-top: 80px
+    display: block
+    margin-top: 100px
 
 // SECTION REGRAS //
 .section-regras
@@ -281,18 +287,17 @@ table
     font-family: arial
 
 .table
-    border-bottom: #999 solid 1px
     width: 100%
     margin-bottom: 20px
 
 .table
-    th, td
-     border-right: #999 solid 1px
+    th, td, tr
      font-size: 12px
      padding: 8px
-     line-height: 20px
-     text-align: left
+
+     text-align: center
      vertical-align: middle
+     background-color: #005dab
 
 .table td:last-child
     border-right: 0
@@ -305,7 +310,25 @@ table
 
 .table tbody > tr:nth-child(odd) > td,
 .table tbody > tr:nth-child(odd) > th
-    background-color: #f8f8f8
+    background-color: #C9DFF0
+
+.table tbody > tr:nth-child(even) > td,
+.table tbody > tr:nth-child(even) > th
+    background-color: #f1f1f1
+
+select
+    width: 100%
+    border: 1px solid #f1f1f1
+    background-color: inherit
+    padding: 2px
+button
+    padding: 4px
+    width: 100%
+    border: none
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
+    background-color: #9926F6
+    color: #fff
+    border: 1px solid #fff
 
 
 @media (max-width: 767px)
@@ -316,7 +339,7 @@ table
         thead, tbody, th, td, tr
             display: block
         td, th
-            height: 35px
+            height: 40px
         thead
             float: left
         tbody
@@ -327,5 +350,3 @@ table
             white-space: nowrap
             tr
                 display: inline-block
-        td:last-child
-            border-right: #999 solid 1px

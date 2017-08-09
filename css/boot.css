@@ -12,6 +12,10 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .fontzero {
   font-size: 0;
 }
@@ -88,7 +92,7 @@ ul {
 }
 
 .header .nav {
-  background: #222;
+  background-color: #19B4FF;
   width: 80%;
   max-width: 300px;
   position: fixed;
@@ -104,6 +108,7 @@ ul {
 .header .nav ul a {
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+  background-color: #19B4FF;
   display: block;
   margin-top: 2px;
   padding: 20px;
@@ -149,6 +154,7 @@ ul {
   margin: 5px 0px;
   border: none;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6e07c1), color-stop(100%, #A02BFF));
+  background-color: #9926F6;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -170,7 +176,8 @@ ul {
 }
 
 main {
-  margin-top: 80px;
+  display: block;
+  margin-top: 100px;
 }
 
 .section-regras {
@@ -357,18 +364,16 @@ table {
 }
 
 .table {
-  border-bottom: #999 solid 1px;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.table th, .table td {
-  border-right: #999 solid 1px;
+.table th, .table td, .table tr {
   font-size: 12px;
   padding: 8px;
-  line-height: 20px;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
+  background-color: #005dab;
 }
 
 .table td:last-child {
@@ -384,7 +389,29 @@ table {
 
 .table tbody > tr:nth-child(odd) > td,
 .table tbody > tr:nth-child(odd) > th {
-  background-color: #f8f8f8;
+  background-color: #C9DFF0;
+}
+
+.table tbody > tr:nth-child(even) > td,
+.table tbody > tr:nth-child(even) > th {
+  background-color: #f1f1f1;
+}
+
+select {
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  background-color: inherit;
+  padding: 2px;
+}
+
+button {
+  padding: 4px;
+  width: 100%;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6e07c1), color-stop(100%, #A02BFF));
+  background-color: #9926F6;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 @media (max-width: 767px) {
@@ -397,7 +424,7 @@ table {
     display: block;
   }
   .table-responsive td, .table-responsive th {
-    height: 35px;
+    height: 40px;
   }
   .table-responsive thead {
     float: left;
@@ -411,8 +438,5 @@ table {
   }
   .table-responsive tbody tr {
     display: inline-block;
-  }
-  .table-responsive td:last-child {
-    border-right: #999 solid 1px;
   }
 }
