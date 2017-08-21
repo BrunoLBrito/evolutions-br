@@ -316,19 +316,19 @@ table
 .table tbody > tr:nth-child(even) > th
     background-color: #f1f1f1
 
-select
-    width: 100%
-    border: 1px solid #fff
-    background-color: inherit
-    padding: 2px
-button
-    padding: 4px
-    width: 100%
-    border: none
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
-    background-color: #9926F6
-    color: #fff
-    border: 1px solid #fff
+    select
+        width: 100%
+        border: 1px solid #fff
+        background-color: inherit
+        padding: 2px
+    button
+        padding: 4px
+        width: 100%
+        border: none
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
+        background-color: #9926F6
+        color: #fff
+        border: 1px solid #fff
 
 
 @media (max-width: 767px)
@@ -350,3 +350,74 @@ button
             white-space: nowrap
             tr
                 display: inline-block
+
+
+// ********************************** //
+// ***** STATES MONSTERS ****** //
+// ********************************** //
+.states
+    font-size: 1em
+.alinhar
+    margin: 0 auto
+    max-width: 500px
+    .stat-head
+        span
+            color: #f00
+    input
+        width: 100px
+        padding: 5px
+    ul
+        margin: 10px 0px
+        border: 1px solid #ccc
+        width: 100%
+        color: #fff
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF))
+        li
+            width: 100%
+            display: table
+            padding: 5px 10px
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF))
+            border-bottom: 1px dotted #fff
+            &:last-child
+                border-bottom: transparent
+            i
+                width: 20px
+                height: 20px
+                text-align: center
+            label
+
+            span
+                text-align: right
+                display: table-cell
+                color: #f00
+                font-weight: bold
+
+    select
+        width: 100%
+        padding: 10px 5px
+        margin: 5px 0
+        text-align: center
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF))
+        outline: none
+        border: none
+        color: #fff
+        option
+            font-size: 15px
+        .power
+            background: #f00
+        .life
+            background: #0f0
+        .speed
+            background: yellow
+        .stamina
+            background: #00f
+            color: #fff
+    button
+        padding: 10px
+        width: 100px
+        margin: 5px 0px
+        border: none
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
+        background-color: #9926F6
+        color: #fff
+        border: 1px solid #fff

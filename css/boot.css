@@ -397,14 +397,16 @@ table {
   background-color: #f1f1f1;
 }
 
-select {
+.table tbody > tr:nth-child(even) > td select,
+.table tbody > tr:nth-child(even) > th select {
   width: 100%;
   border: 1px solid #fff;
   background-color: inherit;
   padding: 2px;
 }
 
-button {
+.table tbody > tr:nth-child(even) > td button,
+.table tbody > tr:nth-child(even) > th button {
   padding: 4px;
   width: 100%;
   border: none;
@@ -439,4 +441,98 @@ button {
   .table-responsive tbody tr {
     display: inline-block;
   }
+}
+
+.states {
+  font-size: 1em;
+}
+
+.alinhar {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.alinhar .stat-head span {
+  color: #f00;
+}
+
+.alinhar input {
+  width: 100px;
+  padding: 5px;
+}
+
+.alinhar ul {
+  margin: 10px 0px;
+  border: 1px solid #ccc;
+  width: 100%;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+}
+
+.alinhar ul li {
+  width: 100%;
+  display: table;
+  padding: 5px 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+  border-bottom: 1px dotted #fff;
+}
+
+.alinhar ul li:last-child {
+  border-bottom: transparent;
+}
+
+.alinhar ul li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.alinhar ul li span {
+  text-align: right;
+  display: table-cell;
+  color: #f00;
+  font-weight: bold;
+}
+
+.alinhar select {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.alinhar select option {
+  font-size: 15px;
+}
+
+.alinhar select .power {
+  background: #f00;
+}
+
+.alinhar select .life {
+  background: #0f0;
+}
+
+.alinhar select .speed {
+  background: yellow;
+}
+
+.alinhar select .stamina {
+  background: #00f;
+  color: #fff;
+}
+
+.alinhar button {
+  padding: 10px;
+  width: 100px;
+  margin: 5px 0px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6e07c1), color-stop(100%, #A02BFF));
+  background-color: #9926F6;
+  color: #fff;
+  border: 1px solid #fff;
 }

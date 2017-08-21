@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:300,400,600,700|Oswald:300,400,500,600,700|Pacifico|Roboto:100,300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/boot.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <meta name="theme-color" content="#19B4FF">
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -137,6 +138,7 @@
             <div class="clear"></div>
         </section> <!-- FIM SECTION REGRAS -->
 
+        <!-- SECTION DA EQUIPE -->
         <section class="container equipe">
             <h2>| <i class="fa fa-users"></i> Equipe |<div class="triangulo"></div></h2>
             <div class="content">
@@ -173,7 +175,203 @@
 
             </div>
             <div class="clear"></div>
-        </section>
+        </section> <!-- FIM SECTION DA EQUIPE -->
+
+        <!-- SECTION DE CALCULOS DE STATES -->
+        <section class="container states">
+            <div class="content">
+
+            <div class="alinhar">
+
+                <div class="stat-head">Level (<span>0</span>)</div>
+                <input  value="0" type="number" id="monster_level_stat" data-props='{"min_level":0,"max_level":130}'>
+
+                <ul>
+                    <li>
+                        <!-- <img src="img/stat-power.png"> -->
+                        | <i class="fa fa-hand-rock-o"></i> |
+                        <label>Força</label>
+                        <span id="forca" class="stats-value-power">0</span>
+                    </li>
+                    <li>
+                        <!-- <img src="img/stat-life.png"> -->
+                        | <i class="fa fa-heart"></i> |
+                        <label>Vida</label>
+                        <span id="life" class="stats-value-life">0</span>
+                    </li>
+                    <li>
+                        <!-- <img src="img/stat-speed.png"> -->
+                        | <i class="fa fa-hourglass"></i> |
+                        <label>Velocidade</label>
+                        <span id="velox" class="stats-value-speed">0</span>
+                    </li>
+                    <li>
+                       <!--  <img src="img/stat-stamina.png"> -->
+                       | <i class="fa fa-flash"></i> |
+                       <label>Resistência</label>
+                        <span id="stam" class="stats-value-stamina">140</span>
+                    </li>
+
+                </ul>
+
+                <!-- PRIMEIRA RUNA -->
+                <select name="skill-velox" id="svelox" onchange="m.idRuna1(this.value)">
+                    <option value="nulo 00" selected id="nulo1">Sem Runa</option>
+
+                    <option value="f 06" class="power">Força I</option>
+                    <option value="f 12" class="power">Força II</option>
+                    <option value="f 24" class="power">Força III</option>
+                    <option value="f 36" class="power">Força IV</option>
+                    <option value="f 48" class="power">Força V</option>
+                    <option value="f 66" class="power">Força VI</option>
+                    <option value="f 78" class="power">Força VII</option>
+                    <option value="f 88" class="power">Força VIII</option>
+                    <option value="f 96" class="power">Força IX</option>
+                    <option value="f 102" class="power">Força X</option>
+
+                    <option value="l 09" class="life">Vida I</option>
+                    <option value="l 15" class="life">Vida II</option>
+                    <option value="l 27" class="life">Vida III</option>
+                    <option value="l 39" class="life">Vida IV</option>
+                    <option value="l 54" class="life">Vida V</option>
+                    <option value="l 72" class="life">Vida VI</option>
+                    <option value="l 84" class="life">Vida VII</option>
+                    <option value="l 94" class="life">Vida VIII</option>
+                    <option value="l 102" class="life">Vida IX</option>
+                    <option value="l 108" class="life">Vida X</option>
+
+                    <option value="v 04" class="speed">Velocidade I</option>
+                    <option value="v 08" class="speed">Velocidade II</option>
+                    <option value="v 12" class="speed">Velocidade III</option>
+                    <option value="v 16" class="speed">Velocidade IV</option>
+                    <option value="v 20" class="speed">Velocidade V</option>
+                    <option value="v 24" class="speed">Velocidade VI</option>
+                    <option value="v 28" class="speed">Velocidade VII</option>
+                    <option value="v 31" class="speed">Velocidade VIII</option>
+                    <option value="v 34" class="speed">Velocidade IX</option>
+                    <option value="v 35" class="speed">Velocidade X</option>
+
+                    <option value="r 15" class="stamina">Resistência I</option>
+                    <option value="r 35" class="stamina">Resistência II</option>
+                    <option value="r 50" class="stamina">Resistência III</option>
+                    <option value="r 65" class="stamina">Resistência IV</option>
+                    <option value="r 80" class="stamina">Resistência V</option>
+                    <option value="r 100" class="stamina">Resistência VI</option>
+                    <option value="r 116" class="stamina">Resistência VII</option>
+                    <option value="r 130" class="stamina">Resistência VIII</option>
+                    <option value="r 142" class="stamina">Resistência IX</option>
+                    <option value="r 152" class="stamina">Resistência X</option>
+
+                </select>
+
+                <!-- SEGUNDA RUNA -->
+                <select name="skill-velox" id="svelox" onchange="m.idRuna2(this.value)">
+                    <option value="nulo 00" selected id="nulo2">Sem Runa</option>
+
+                    <option value="f 06" class="power">Força I</option>
+                    <option value="f 12" class="power">Força II</option>
+                    <option value="f 24" class="power">Força III</option>
+                    <option value="f 36" class="power">Força IV</option>
+                    <option value="f 48" class="power">Força V</option>
+                    <option value="f 66" class="power">Força VI</option>
+                    <option value="f 78" class="power">Força VII</option>
+                    <option value="f 88" class="power">Força VIII</option>
+                    <option value="f 96" class="power">Força IX</option>
+                    <option value="f 102" class="power">Força X</option>
+
+                    <option value="l 09" class="life">Vida I</option>
+                    <option value="l 15" class="life">Vida II</option>
+                    <option value="l 27" class="life">Vida III</option>
+                    <option value="l 39" class="life">Vida IV</option>
+                    <option value="l 54" class="life">Vida V</option>
+                    <option value="l 72" class="life">Vida VI</option>
+                    <option value="l 84" class="life">Vida VII</option>
+                    <option value="l 94" class="life">Vida VIII</option>
+                    <option value="l 102" class="life">Vida IX</option>
+                    <option value="l 108" class="life">Vida X</option>
+
+                    <option value="v 04" class="speed">Velocidade I</option>
+                    <option value="v 08" class="speed">Velocidade II</option>
+                    <option value="v 12" class="speed">Velocidade III</option>
+                    <option value="v 16" class="speed">Velocidade IV</option>
+                    <option value="v 20" class="speed">Velocidade V</option>
+                    <option value="v 24" class="speed">Velocidade VI</option>
+                    <option value="v 28" class="speed">Velocidade VII</option>
+                    <option value="v 31" class="speed">Velocidade VIII</option>
+                    <option value="v 34" class="speed">Velocidade IX</option>
+                    <option value="v 35" class="speed">Velocidade X</option>
+
+                    <option value="r 15" class="stamina">Resistência I</option>
+                    <option value="r 35" class="stamina">Resistência II</option>
+                    <option value="r 50" class="stamina">Resistência III</option>
+                    <option value="r 65" class="stamina">Resistência IV</option>
+                    <option value="r 80" class="stamina">Resistência V</option>
+                    <option value="r 100" class="stamina">Resistência VI</option>
+                    <option value="r 116" class="stamina">Resistência VII</option>
+                    <option value="r 130" class="stamina">Resistência VIII</option>
+                    <option value="r 142" class="stamina">Resistência IX</option>
+                    <option value="r 152" class="stamina">Resistência X</option>
+
+
+                </select>
+
+                <!-- TERCEIRA RUNA -->
+                <select name="skill-velox" id="svelox" onchange="m.idRuna3(this.value)">
+                    <option value="nulo 00" selected id="nulo3">Sem Runa</option>
+
+                    <option value="f 06" class="power">Força I</option>
+                    <option value="f 12" class="power">Força II</option>
+                    <option value="f 24" class="power">Força III</option>
+                    <option value="f 36" class="power">Força IV</option>
+                    <option value="f 48" class="power">Força V</option>
+                    <option value="f 66" class="power">Força VI</option>
+                    <option value="f 78" class="power">Força VII</option>
+                    <option value="f 88" class="power">Força VIII</option>
+                    <option value="f 96" class="power">Força IX</option>
+                    <option value="f 102" class="power">Força X</option>
+
+                    <option value="l 09" class="life">Vida I</option>
+                    <option value="l 15" class="life">Vida II</option>
+                    <option value="l 27" class="life">Vida III</option>
+                    <option value="l 39" class="life">Vida IV</option>
+                    <option value="l 54" class="life">Vida V</option>
+                    <option value="l 72" class="life">Vida VI</option>
+                    <option value="l 84" class="life">Vida VII</option>
+                    <option value="l 94" class="life">Vida VIII</option>
+                    <option value="l 102" class="life">Vida IX</option>
+                    <option value="l 108" class="life">Vida X</option>
+
+                    <option value="v 04" class="speed">Velocidade I</option>
+                    <option value="v 08" class="speed">Velocidade II</option>
+                    <option value="v 12" class="speed">Velocidade III</option>
+                    <option value="v 16" class="speed">Velocidade IV</option>
+                    <option value="v 20" class="speed">Velocidade V</option>
+                    <option value="v 24" class="speed">Velocidade VI</option>
+                    <option value="v 28" class="speed">Velocidade VII</option>
+                    <option value="v 31" class="speed">Velocidade VIII</option>
+                    <option value="v 34" class="speed">Velocidade IX</option>
+                    <option value="v 35" class="speed">Velocidade X</option>
+
+                    <option value="r 15" class="stamina">Resistência I</option>
+                    <option value="r 35" class="stamina">Resistência II</option>
+                    <option value="r 50" class="stamina">Resistência III</option>
+                    <option value="r 65" class="stamina">Resistência IV</option>
+                    <option value="r 80" class="stamina">Resistência V</option>
+                    <option value="r 100" class="stamina">Resistência VI</option>
+                    <option value="r 116" class="stamina">Resistência VII</option>
+                    <option value="r 130" class="stamina">Resistência VIII</option>
+                    <option value="r 142" class="stamina">Resistência IX</option>
+                    <option value="r 152" class="stamina">Resistência X</option>
+
+                </select>
+
+                <button onclick="m.display()">OK</button>
+                <button onclick="m.reset()">RESET</button>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section> <!-- FIM SECTION DE CALCULOS DE STATES -->
+
     </main> <!-- FIM MAIN -->
 
     <footer class="container footer">
@@ -182,6 +380,12 @@
         </div>
         <div class="clear"></div>
     </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/calc.js"></script>
+<script>
+    var m = new Monster();
+</script>
 </body>
 </html>
