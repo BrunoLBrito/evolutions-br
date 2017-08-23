@@ -26,3 +26,16 @@ function btnMobile(){
     }
 }
 
+// MODAL --------------//
+var modal = document.querySelector('.modal');
+var close = document.querySelector('.close');
+var login = document.querySelector('#login');
+
+close.onclick = function(){
+    modal.style.display = 'none';
+}
+
+login.onclick = function(){
+    modal.style.display = 'block';
+}
+

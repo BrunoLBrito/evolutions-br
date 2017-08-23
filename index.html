@@ -32,7 +32,7 @@
 
                 <div class="profile">
                     <p>Olá, <span>Visitante</span></p>
-                    <button class="btn"><i class="fa fa-heart"></i> Login</button>
+                    <button class="btn" id="login"><i class="fa fa-heart"></i> Login</button>
                     <button class="btn"><i class="fa fa-user-plus"></i> Cadastrar</button>
                 </div>
                 <ul>
@@ -67,6 +67,26 @@
         <div class="clear"></div>
     </header> <!-- FIM HEADER -->
 
+    <!-- MODAL LOGIN -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Faça seu Login</h2>
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modal-body">
+
+            </div>
+
+            <div class="modal-footer">
+
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div> <!-- FIM MODAL LOGIN -->
+
     <!-- MAIN -->
     <main>
 
@@ -83,7 +103,7 @@
                 </div>
 
                 <article class="art-equipe">
-
+                    <h3>Equipe / Guerra</h3>
                     <div class="content-regras">
                         <p>
                             <span>1° - </span>Respeitar todos os membros sem exceção, independente de classe social, religião, cor, sexo,opção sexual, time de futebol etc.....
@@ -179,12 +199,19 @@
 
         <!-- SECTION DE CALCULOS DE STATES -->
         <section class="container states">
+            <h2>| <i class="fa fa-address-book-o"></i> Monster States (BETA) | <div class="triangulo"></div></h2>
             <div class="content">
 
             <div class="alinhar">
 
                 <div class="stat-head">Level (<span>0</span>)</div>
                 <input  value="0" type="number" id="monster_level_stat" data-props='{"min_level":0,"max_level":130}'>
+
+                <select class="select-monsters">
+                    <option value="00" selected="select">Selecione um monstro</option>
+                    <option value="voltaik">Voltaik</option>
+                    <option value="thetys">Thetys</option>
+                </select>
 
                 <ul>
                     <li>

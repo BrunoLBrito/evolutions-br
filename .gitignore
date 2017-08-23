@@ -2,3 +2,6 @@ node_modules
 bower_components
 tim.php
 /cache
+debug
+/css/debug.css
+/sass/debug.sass

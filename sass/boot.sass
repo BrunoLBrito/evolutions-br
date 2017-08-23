@@ -316,19 +316,19 @@ table
 .table tbody > tr:nth-child(even) > th
     background-color: #f1f1f1
 
-    select
-        width: 100%
-        border: 1px solid #fff
-        background-color: inherit
-        padding: 2px
-    button
-        padding: 4px
-        width: 100%
-        border: none
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
-        background-color: #9926F6
-        color: #fff
-        border: 1px solid #fff
+select
+    width: 100%
+    border: 1px solid #fff
+    background-color: inherit
+    padding: 2px
+button
+    padding: 4px
+    width: 100%
+    border: none
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6e07c1), color-stop(100%,#A02BFF))
+    background-color: #9926F6
+    color: #fff
+    border: 1px solid #fff
 
 
 @media (max-width: 767px)
@@ -364,8 +364,15 @@ table
         span
             color: #f00
     input
-        width: 100px
-        padding: 5px
+        width: 30%
+        padding: 9px 5px
+        display: block
+        border: 1px solid #ccc
+    .select-monsters
+        width: 100%
+        background: #fff
+        color: #000
+        border: 1px solid #ccc
     ul
         margin: 10px 0px
         border: 1px solid #ccc
@@ -421,3 +428,69 @@ table
         background-color: #9926F6
         color: #fff
         border: 1px solid #fff
+
+// ********************************** //
+// ***** MODAL ****** //
+// ********************************** //
+.modal
+    width: 100%
+    height: 100%
+    padding-top: 20px
+    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0,.8)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 110
+    overflow-y: auto
+    display: none
+    .modal-content
+        font-family: 'Lato', 'sans-serif'
+        text-align: center
+        width: 92%
+        max-width: 800px
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+        background: #fff
+        position: relative
+        margin: auto
+        float: none
+        animation: animatedtop .7s
+        .modal-header
+            border-bottom: 1px solid #f1f1f1
+            color: #000
+            background: #f1f1f1
+            h2
+                padding: 20px
+            .close
+                font-size: 2em
+                top: -5px
+                right: 10px
+                position: absolute
+                color: #f00
+                font-weight: bold
+                cursor: pointer
+        .modal-body
+            min-height: 100px
+
+        .modal-footer
+            border-top: 1px solid #f1f1f1
+            padding: 30px 0px
+            height: 50px
+
+@keyframes animatedtop
+    0%
+        opacity: 0
+        transform: scaleX(0) skewX(30deg)
+
+    50%
+        transform: scale(0) skewX(30deg)
+    100%
+        top: 0
+        opacity: 1
+        transform: scale(1) skewX(0)
+
+@keyframes animatedback
+    from
+        opacity: 1
+    to
+        opacity: 0
