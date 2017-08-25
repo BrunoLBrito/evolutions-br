@@ -1,3 +1,41 @@
+.cargo-adm {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c82273), color-stop(100%, #e24a35));
+  background-color: #DE4340;
+  display: block;
+  text-align: center;
+}
+
+.cargo-mod {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
+  background-color: #19B4FF;
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  color: #6666FF;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px 0px;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+h2 .triangulo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50px;
+  bottom: -100px;
+  border: 50px solid transparent;
+  border-top-color: #fff;
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -17,7 +55,9 @@ button {
 }
 
 .fontzero {
-  font-size: 0;
+  font-size: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .clear {
@@ -152,25 +192,9 @@ button {
   border: 1px solid #fff;
 }
 
-.cargo-adm {
-  color: #fff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c82273), color-stop(100%, #e24a35));
-  background-color: #DE4340;
-  display: block;
-  text-align: center;
-}
-
-.cargo-mod {
-  color: #fff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
-  background-color: #19B4FF;
-  display: block;
-  text-align: center;
-}
-
 main {
   display: block;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .section-regras {
@@ -179,28 +203,6 @@ main {
   font-weight: 300;
   font-size: 1em;
   padding-bottom: 100px;
-}
-
-.section-regras h2 {
-  text-align: center;
-  position: relative;
-  color: #6666FF;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 20px 0px;
-  background: #fff;
-  margin-bottom: 50px;
-}
-
-.section-regras .triangulo {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-left: -50px;
-  bottom: -100px;
-  border: 50px solid transparent;
-  border-top-color: #fff;
 }
 
 .section-regras .sobre {
@@ -261,30 +263,8 @@ main {
 
 .equipe {
   width: 100%;
-  background: #fff;
+  background: #f9f9f9;
   font-family: 'Roboto', sans-serif;
-}
-
-.equipe h2 {
-  text-align: center;
-  position: relative;
-  color: #6666FF;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 20px 0px;
-  background: #fff;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-.equipe .triangulo {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-left: -50px;
-  top: -100px;
-  border: 50px solid transparent;
-  border-bottom-color: #fff;
 }
 
 .equipe .flex {
@@ -338,14 +318,8 @@ footer.footer p span {
   font-weight: bold;
 }
 
-.membros h2 {
-  text-align: center;
-  color: #6666FF;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background: #fff;
-  padding: 20px 0px;
+.membros {
+  background-color: #f9f9f9;
 }
 
 table {
@@ -436,6 +410,7 @@ button {
 
 .states {
   font-size: 1em;
+  background-color: #f9f9f9;
 }
 
 .alinhar {
@@ -568,10 +543,6 @@ button {
   color: #fff;
   background: #8744FF;
   padding: 20px;
-}
-
-.modal .modal-content .modal-header h2 {
-  font-weight: 600;
 }
 
 .modal .modal-content .modal-header .close {

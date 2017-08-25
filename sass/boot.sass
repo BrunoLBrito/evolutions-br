@@ -1,6 +1,38 @@
+// VARIAVEIS //
+$bgGray: #f9f9f9
+
 // HELPERS SASS //
+.cargo-adm
+    color: #fff
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c82273), color-stop(100%,#e24a35))
+    background-color: #DE4340
+    display: block
+    text-align: center
+.cargo-mod
+    color: #fff
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
+    background-color: #19B4FF
+    display: block
+    text-align: center
 
-
+h2
+    text-align: center
+    position: relative
+    color: #6666FF
+    font-family: 'Roboto', sans-serif
+    text-transform: uppercase
+    letter-spacing: 2px
+    padding: 50px 0px
+    background: #fff
+    margin-bottom: 50px
+    .triangulo
+        position: absolute
+        left: 50%
+        right: 50%
+        margin-left: -50px
+        bottom: -100px
+        border: 50px solid transparent
+        border-top-color: #fff
 
 // RESET //
 *, *:before, *:after
@@ -8,6 +40,7 @@
     padding: 0
     box-sizing: border-box
     // font-family: 'Open Sans', sans-serif
+
 a
     text-decoration: none
 ul
@@ -18,13 +51,16 @@ button
 
 // BOOT //
 .fontzero
-    font-size: 0
+    font-size: 0 !important
+    padding: 0 !important
+    margin: 0 !important
 .clear
     clear: both
 
 .container
     width: 100%
     float: left
+
 .content
     width: 92%
     float: left
@@ -119,50 +155,19 @@ button
                 background-color: #9926F6
                 color: #fff
                 border: 1px solid #fff
-.cargo-adm
-    color: #fff
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c82273), color-stop(100%,#e24a35))
-    background-color: #DE4340
-    display: block
-    text-align: center
-.cargo-mod
-    color: #fff
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
-    background-color: #19B4FF
-    display: block
-    text-align: center
-
 
 // MAIN //
 main
     display: block
-    margin-top: 100px
+    margin-top: 80px
 
 // SECTION REGRAS //
 .section-regras
-    background: #f9f9f9
+    background: $bgGray
     font-family: 'Roboto', sans-serif
     font-weight: 300
     font-size: 1em
     padding-bottom: 100px
-    h2
-        text-align: center
-        position: relative
-        color: #6666FF
-        font-family: 'Open Sans', sans-serif
-        text-transform: uppercase
-        letter-spacing: 2px
-        padding: 20px 0px
-        background: #fff
-        margin-bottom: 50px
-    .triangulo
-        position: absolute
-        left: 50%
-        right: 50%
-        margin-left: -50px
-        bottom: -100px
-        border: 50px solid transparent
-        border-top-color: #fff
     .sobre
         margin: 15px 0px
         h3
@@ -201,26 +206,8 @@ main
 // SECTION EQUIPE //
 .equipe
     width: 100%
-    background: #fff
+    background: $bgGray
     font-family: 'Roboto', sans-serif
-    h2
-        text-align: center
-        position: relative
-        color: #6666FF
-        font-family: 'Open Sans', sans-serif
-        text-transform: uppercase
-        letter-spacing: 2px
-        padding: 20px 0px
-        background: #fff
-        border-bottom: 1px solid #f1f1f1
-    .triangulo
-        position: absolute
-        left: 50%
-        right: 50%
-        margin-left: -50px
-        top: -100px
-        border: 50px solid transparent
-        border-bottom-color: #fff
     .flex
         display: flex
         flex-wrap: wrap
@@ -263,15 +250,7 @@ footer.footer
 // ***** PAINEL ADMINISTRATIVO ****** //
 // ********************************** //
 .membros
-
-    h2
-        text-align: center
-        color: #6666FF
-        font-family: 'Open Sans', sans-serif
-        text-transform: uppercase
-        letter-spacing: 2px
-        background: #fff
-        padding: 20px 0px
+    background-color: $bgGray
 
 table
     max-width: 100%
@@ -351,6 +330,7 @@ button
 // ********************************** //
 .states
     font-size: 1em
+    background-color: $bgGray
 .alinhar
     margin: 0 auto
     max-width: 500px
@@ -453,8 +433,6 @@ button
             color: #fff
             background: #8744FF
             padding: 20px
-            h2
-                font-weight: 600
             .close
                 font-size: 2em
                 top: -5px
