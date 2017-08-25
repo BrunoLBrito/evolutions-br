@@ -21,9 +21,9 @@
             <h1><i class="fa fa-optin-monster"></i> E-BR</h1>
 
             <div class="btn-mobile">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
             </div>
 
             <!-- MENU NAV DESLOGADOS-->
@@ -71,16 +71,26 @@
     <div class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Faça seu Login</h2>
+                <h2>Entre na sua conta</h2>
                 <span class="close">&times;</span>
             </div>
 
             <div class="modal-body">
+                <form action="" method="POST" class="form-login">
+                    <label for="email">Email:
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                    </label>
 
+                    <label for="senha">Senha:
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha">
+                    </label>
+
+                    <input type="submit" name="ok" value="Entrar">
+                </form>
             </div>
 
             <div class="modal-footer">
-
+                <a href="#">Esqueceu sua senha?</a>
             </div>
 
         </div>

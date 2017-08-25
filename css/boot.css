@@ -56,39 +56,32 @@ button {
 }
 
 .header .btn-mobile {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
+  background-color: transparent;
   float: right;
-  border: 1px solid #000;
   position: relative;
   cursor: pointer;
   transition: border-radius .5s;
 }
 
-.header .btn-mobile:hover {
-  background-color: #fff;
-}
-
 .header .btn-mobile span {
-  width: 30px;
-  height: 4px;
-  background-color: #000;
-  left: 4px;
-  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
   transition: all .5s;
+  display: block;
+  margin: 6px auto;
 }
 
-.header .btn-mobile span:nth-child(1) {
-  top: 8px;
+.header .change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.header .btn-mobile span:nth-child(2) {
-  top: 17px;
+.header .change .bar2 {
+  opacity: 0;
 }
 
-.header .btn-mobile span:nth-child(3) {
-  top: 26px;
+.header .change .bar3 {
+  transform: rotate(405deg) translate(-8px, -8px);
 }
 
 .header .nav {
@@ -559,34 +552,34 @@ button {
 }
 
 .modal .modal-content {
-  font-family: 'Lato', 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif';
   text-align: center;
   width: 92%;
   max-width: 800px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: #fff;
+  background: #f1f1f1;
   position: relative;
   margin: auto;
   float: none;
-  animation: animatedtop .7s;
 }
 
 .modal .modal-content .modal-header {
   border-bottom: 1px solid #f1f1f1;
-  color: #000;
-  background: #f1f1f1;
+  color: #fff;
+  background: #8744FF;
+  padding: 20px;
 }
 
 .modal .modal-content .modal-header h2 {
-  padding: 20px;
+  font-weight: 600;
 }
 
 .modal .modal-content .modal-header .close {
   font-size: 2em;
   top: -5px;
-  right: 10px;
+  right: 5px;
   position: absolute;
-  color: #f00;
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
@@ -597,8 +590,12 @@ button {
 
 .modal .modal-content .modal-footer {
   border-top: 1px solid #f1f1f1;
-  padding: 30px 0px;
-  height: 50px;
+  padding: 10px 20px 20px 20px;
+  text-align: right;
+}
+
+.modal .modal-content .modal-footer a {
+  text-decoration: underline;
 }
 
 @keyframes animatedtop {
@@ -618,9 +615,40 @@ button {
 
 @keyframes animatedback {
   from {
-    opacity: 1;
+    top: 0%;
   }
   to {
-    opacity: 0;
+    top: -100%;
   }
+}
+
+.form-login {
+  width: 100%;
+  font-size: 1em;
+  padding: 20px;
+  display: block;
+}
+
+.form-login label, .form-login input {
+  display: block;
+  width: 100%;
+}
+
+.form-login label {
+  text-align: left;
+  margin: 20px auto;
+}
+
+.form-login input {
+  font-family: 'Open Sans', 'sans-serif';
+  padding: 15px 10px;
+  font-size: 1em;
+  border: none;
+  background: #fff;
+}
+
+.form-login input[type=submit] {
+  background: #8744FF;
+  border: none;
+  color: #fff;
 }

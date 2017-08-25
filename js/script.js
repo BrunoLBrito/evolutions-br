@@ -1,41 +1,42 @@
 var btn = document.querySelector('.btn-mobile');
 var nav = document.querySelector('.nav');
-var action = false;
 
-function span(num){
-    return document.querySelector('.btn-mobile span:nth-child('+ num +')');
-}
-
-btn.addEventListener('click', btnMobile);
-
-function btnMobile(){
-    if(!action){
+btn.onclick = function(){
+    btn.classList.toggle("change");
+    if(btn.classList.contains("change")){
         nav.style.left = 0;
-        span(1).style.transform = "translate(0px, 8px) rotate(225deg)";
-        span(2).style.opacity = 0;
-        span(3).style.transform = "translate(0px, -10px) rotate(-225deg)";
-        btn.style.borderRadius = "50%";
-        action = true;
     }else{
-        nav.style.left = "-100%";
-        span(1).style.transform = "translate(0px, 0px) rotate(0deg)";
-        span(2).style.opacity = 1;
-        span(3).style.transform = "translate(0px, 0px) rotate(0deg)";
-        btn.style.borderRadius = "0";
-        action = false;
+       nav.style.left = "-100%";
     }
 }
 
 // MODAL --------------//
 var modal = document.querySelector('.modal');
+var modalContent = document.querySelector('.modal-content');
 var close = document.querySelector('.close');
 var login = document.querySelector('#login');
 
+var modalAction = 'desativo';
+
 close.onclick = function(){
-    modal.style.display = 'none';
+    if(modalAction == 'ativo'){
+        modalContent.style.animation = "animatedback 1s";
+        setTimeout(function(){
+            modal.style.display = 'none';
+        }, 700);
+        modalAction = 'desativo';
+    }
 }
 
 login.onclick = function(){
-    modal.style.display = 'block';
+    if(modalAction == 'desativo')
+        modal.style.display = 'block';
+        modalContent.style.animation = "animatedtop .7s";
+        modalAction = 'ativo';
 }
+
+// window.onclick = function(e){
+//     if(e.target == modal)
+//         modal.style.display = "none";
+// }
 
