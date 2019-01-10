@@ -78,7 +78,6 @@ button {
 
 .header {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
-  background-color: #19B4FF;
   height: 80px;
   position: fixed;
   z-index: 99;
@@ -141,7 +140,6 @@ button {
 .header .nav ul a {
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #A02BFF), color-stop(100%, #00CEFF));
-  background-color: #19B4FF;
   display: block;
   margin-top: 2px;
   padding: 20px;
@@ -303,7 +301,7 @@ main {
 
 footer.footer {
   height: 80px;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-size: 1em;

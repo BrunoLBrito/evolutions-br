@@ -1,6 +1,13 @@
 // VARIAVEIS //
 $bgGray: #f9f9f9
 
+// Gratientes
+$blueToPurple: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
+
+$redHunt: #EB586F
+$grayHunt: #D8E9F0
+$blueHunt: #4AA0D5
+$blackHunt: #454553
 // HELPERS SASS //
 .cargo-adm
     color: #fff
@@ -70,8 +77,8 @@ button
 // CONTEUDO //
 // HEADER //
 .header
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
-    background-color: #19B4FF
+    background: $blueToPurple
+    // background-color: #19B4FF
     height: 80px
     position: fixed
     z-index: 99
@@ -116,8 +123,8 @@ button
             margin-top: 80px
             a
                 color: #fff
-                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
-                background-color: #19B4FF
+                background: $blueToPurple
+                // background-color: #19B4FF
                 display: block
                 margin-top: 2px
                 padding: 20px
@@ -129,7 +136,7 @@ button
                     color: #fff
                     text-align: center
         .profile
-            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#A02BFF), color-stop(100%,#00CEFF))
+            background: $blueToPurple
             width: 100%
             height: 80px
             float: left
@@ -236,7 +243,7 @@ main
 // FOOTER //
 footer.footer
     height: 80px
-    background-color: #000
+    background-color: #222
     text-align: center
     font-family: 'Lato', sans-serif
     font-size: 1em
